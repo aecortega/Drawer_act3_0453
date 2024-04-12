@@ -9,6 +9,7 @@ class ContactsPage extends StatefulWidget {
 
 class _ContactsPageState extends State<ContactsPage> {
   int level = 4;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -76,6 +77,17 @@ class _ContactsPageState extends State<ContactsPage> {
                 ),
               )
             ]),
+            const SizedBox(
+                height: 20), // Espacio entre el texto y el contenedor
+            Text(
+              'Angel Cisneros\n M: 21308051280453',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
